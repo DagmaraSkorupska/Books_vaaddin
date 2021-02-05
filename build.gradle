@@ -9,26 +9,17 @@ group = 'com.project'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '1.8'
 
-configurations {
-    compileOnly {
-        extendsFrom annotationProcessor
-    }
-}
-
 repositories {
     mavenCentral()
 }
 
 ext {
-    set('vaadinVersion', "14.4.6")
+//    set('vaadinVersion', "14.4.6")
+    set('vaadinVersion', "14.3.7")
 }
 
 dependencies {
     implementation 'com.vaadin:vaadin-spring-boot-starter'
-    compileOnly 'org.projectlombok:lombok'
-    developmentOnly 'org.springframework.boot:spring-boot-devtools'
-    annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
-    annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     
 }
